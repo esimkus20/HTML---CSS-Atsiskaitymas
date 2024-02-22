@@ -1,0 +1,49 @@
+.free__section {
+  height: 365px;
+  background: url(assets/background.svg);
+  background-position: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .wrapper {
+    height: 100%;
+
+    .free__container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .free__title {
+        font-size: 3rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+      }
+
+      .free__paragraph {
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background: none;
+    .wrapper {
+      .free__container {
+        background: url(assets/background.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1.5rem;
+        box-sizing: border-box;
+        padding: 2.5rem 5rem;
+        height: 110%;
+      }
+
+      .free__title {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}

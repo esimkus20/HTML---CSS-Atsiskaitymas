@@ -1,0 +1,17 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  width: 480px;
+
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+}
+
+.wrapper {
+  padding: 0 2rem;
+
+  @media screen and (min-width: 1000px) {
+    padding: 0 6rem;
+  }
+}

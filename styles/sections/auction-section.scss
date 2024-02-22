@@ -1,0 +1,176 @@
+.auction__section {
+  padding-bottom: 5.8rem;
+  border-bottom: 2px solid $light-2;
+
+  .wrapper {
+
+    .auction__companies {
+      padding: 5rem 0 2rem 0;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+
+      .auction__company {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:nth-child(4), &:nth-child(2) {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 1500px) {
+        padding: 9rem 0 5rem 0;
+        grid-template-columns: repeat(5, 1fr);
+
+        .auction__company {
+
+          &:nth-child(2) img, &:nth-child(4) img {
+            margin: auto 60px;
+          }
+
+          img {
+            width: 200px;
+            height: 50px;
+          }
+
+          &:nth-child(1) {
+            display: none;
+          }
+
+          &:nth-child(4), &:nth-child(2) {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .auction__title {
+      font-size: 2.75rem;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    .auction__paragraph {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-bottom: 5px;
+    }
+
+    .auction__anchor {
+      color: $dark-2;
+      font-size: 1.5rem;
+
+      .no-underline {
+        text-decoration: none;
+        display: inline-block;
+      }
+    }
+
+    .auction__nfts {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2.5rem;
+      margin-top: 3rem;
+
+      .auction__nft {
+        width: max-content;
+
+        .nft-image {
+          width: 333px;
+        }
+
+        .nft__content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: -5px;
+          padding: 1.25rem;
+          background-color: $light-2;
+          border-radius: 0 0 1rem 1rem;
+
+          .nft__content-left {
+
+            .nft__content-series {
+              color: $orange;
+              text-transform: uppercase;
+              font-size: .85rem;
+              font-weight: 500;
+              margin-top: 0;
+            }
+
+            .nft__content-title {
+              font-size: 1.4rem;
+              font-weight: 500;
+              margin: 0;
+            }
+
+            .nft__content-paragraph {
+              color: $dark-3;
+              font-size: 1.25rem;
+              margin: 10px 0 0 0;
+            }
+          }
+
+          .nft__content-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .nft__content-paragraph-small {
+              font-size: .8rem;
+              font-weight: 500;
+              text-transform: uppercase;
+              color: $dark-3;
+              margin-top: 0;
+            }
+
+            .nft__content-price {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              .etherium-icon {
+                margin-right: 10px;
+              }
+
+              .nft__content-title {
+                font-size: 1.4rem;
+                font-weight: 500;
+                margin: 0;
+              }
+            }
+
+            .nft__content-paragraph {
+              color: $dark-3;
+              font-size: 1.25rem;
+              margin: 10px 0 0 0;
+            }
+          }
+        }
+        
+        @media screen and (min-width: 768px) {
+
+          .nft-image {
+            width: 400px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+
+    .wrapper {
+
+      .auction__title {
+        margin-bottom: 1.5rem;
+      }
+
+      .auction__paragraph {
+        display: inline;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.sign-up__section {
+  display: flex;
+  align-items: center;
+  height: 540px;
+  padding: 3rem 0 4.5rem 0;
+  border-bottom: 2px solid $light-2;
+
+  .wrapper {
+
+    .sign-up__logo {
+      position: absolute;
+      top: 145rem;
+      right: -20px;
+      width: 220px;
+    }
+
+    .sign-up__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .sign-up__content {
+  
+        .sign-up__title-small {
+          color: $pink;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          letter-spacing: .2rem;
+          font-weight: 900;
+        }
+  
+        .sign-up__title {
+          width: 250px;
+          font-size: 4rem;
+          font-weight: 900;
+          margin: 0;
+        }
+  
+        .sign-up__paragraph {
+          font-size: 1.5rem;
+          line-height: 2rem;
+          width: 230px;
+          padding-bottom: 1rem;
+          color: $dark-3;
+
+          span {
+            display: none;
+          }
+        }
+  
+        .sign-up__button-border {
+          background: $linear-background;
+          width: max-content;
+          position: relative;
+          border-radius: 3rem;
+          padding: 5px;
+  
+          .sign-up__button {
+            background: $light-1;
+            border-radius: 3rem;
+            border: none;
+            padding: 1.25rem 3.25rem;
+            font-weight: 600;
+            font-size: 1.5rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 100%;
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .sign-up__logo {
+        position: static;
+        width: 300px;
+        margin-bottom: -73px;
+        margin-right: 250px;
+      }
+
+      .sign-up__container {
+
+        .sign-up__content {
+
+          .sign-up__title {
+            width: 100%;
+            font-size: 4.75rem;
+          }
+
+          .sign-up__paragraph {
+            width: 570px;
+
+            span {
+              display: inline;
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+}

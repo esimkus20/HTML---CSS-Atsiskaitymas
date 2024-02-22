@@ -1,1 +1,477 @@
-/* # sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  width: 480px;
+}
+@media screen and (min-width: 480px) {
+  body {
+    width: 100%;
+  }
+}
+
+.wrapper {
+  padding: 0 2rem;
+}
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    padding: 0 6rem;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+header .wrapper {
+  width: 100%;
+}
+header .wrapper .header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .wrapper .header__container .header__logo {
+  width: 220px;
+}
+header .wrapper .header__container .navigation__container {
+  display: none;
+}
+header .wrapper .header__container .navigation__container .navigation__list {
+  display: flex;
+  list-style: none;
+}
+header .wrapper .header__container .navigation__container .navigation__list .navigation__list-item {
+  padding: 0 0 0 2.5rem;
+}
+header .wrapper .header__container .navigation__container .navigation__list .navigation__list-item:nth-last-child(1) a {
+  color: #ff3998;
+}
+header .wrapper .header__container .navigation__container .navigation__list .navigation__list-item a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #777777;
+}
+header .wrapper .header__container .burger {
+  font-size: 2rem;
+  color: #999999;
+}
+@media screen and (min-width: 820px) {
+  header .wrapper .header__container .navigation__container {
+    display: block;
+  }
+  header .wrapper .header__container .burger {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header {
+    height: 200px;
+  }
+}
+
+main .hero__section {
+  display: flex;
+  align-items: center;
+  height: 550px;
+  padding-bottom: 4.5rem;
+}
+main .hero__section .wrapper .hero__logo {
+  position: absolute;
+  top: 40px;
+  right: -243px;
+  width: 500px;
+}
+main .hero__section .wrapper .hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .hero__section .wrapper .hero__container .hero__content .hero__title-small {
+  color: #ff3998;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+}
+main .hero__section .wrapper .hero__container .hero__content .hero__title {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0;
+}
+main .hero__section .wrapper .hero__container .hero__content .hero__paragraph {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  width: 305px;
+  padding-bottom: 1rem;
+  color: #777777;
+}
+main .hero__section .wrapper .hero__container .hero__content .hero__button-border {
+  background: linear-gradient(90deg, rgb(255, 57, 152) 0%, rgb(255, 57, 57) 27%, rgb(255, 128, 57) 52%, rgb(255, 255, 0) 120%);
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  border-radius: 3rem;
+  padding: 5px;
+}
+main .hero__section .wrapper .hero__container .hero__content .hero__button-border .hero__button {
+  background: #FFFFFF;
+  border-radius: 3rem;
+  border: none;
+  padding: 1.5rem 3.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  main .hero__section {
+    height: 100%;
+  }
+  main .hero__section .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  main .hero__section .wrapper .hero__logo {
+    position: static;
+    width: 1085px;
+    margin-right: -150px;
+  }
+  main .hero__section .wrapper .hero__container .hero__content .hero__title {
+    font-size: 8rem;
+  }
+  main .hero__section .wrapper .hero__container .hero__content .hero__paragraph {
+    width: 600px;
+  }
+}
+main .free__section {
+  height: 365px;
+  background: url(assets/background.svg);
+  background-position: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .free__section .wrapper {
+  height: 100%;
+}
+main .free__section .wrapper .free__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+main .free__section .wrapper .free__container .free__title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+main .free__section .wrapper .free__container .free__paragraph {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  main .free__section {
+    background: none;
+  }
+  main .free__section .wrapper .free__container {
+    background: url(assets/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    padding: 2.5rem 5rem;
+    height: 110%;
+  }
+  main .free__section .wrapper .free__title {
+    padding-bottom: 1rem;
+  }
+}
+main .auction__section {
+  padding-bottom: 5.8rem;
+  border-bottom: 2px solid #eeeeee;
+}
+main .auction__section .wrapper .auction__companies {
+  padding: 5rem 0 2rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .auction__section .wrapper .auction__companies .auction__company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .auction__section .wrapper .auction__companies .auction__company:nth-child(4), main .auction__section .wrapper .auction__companies .auction__company:nth-child(2) {
+  display: none;
+}
+@media screen and (min-width: 1500px) {
+  main .auction__section .wrapper .auction__companies {
+    padding: 9rem 0 5rem 0;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  main .auction__section .wrapper .auction__companies .auction__company:nth-child(2) img, main .auction__section .wrapper .auction__companies .auction__company:nth-child(4) img {
+    margin: auto 60px;
+  }
+  main .auction__section .wrapper .auction__companies .auction__company img {
+    width: 200px;
+    height: 50px;
+  }
+  main .auction__section .wrapper .auction__companies .auction__company:nth-child(1) {
+    display: none;
+  }
+  main .auction__section .wrapper .auction__companies .auction__company:nth-child(4), main .auction__section .wrapper .auction__companies .auction__company:nth-child(2) {
+    display: block;
+  }
+}
+main .auction__section .wrapper .auction__title {
+  font-size: 2.75rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+main .auction__section .wrapper .auction__paragraph {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 5px;
+}
+main .auction__section .wrapper .auction__anchor {
+  color: #555555;
+  font-size: 1.5rem;
+}
+main .auction__section .wrapper .auction__anchor .no-underline {
+  text-decoration: none;
+  display: inline-block;
+}
+main .auction__section .wrapper .auction__nfts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+main .auction__section .wrapper .auction__nfts .auction__nft {
+  width: -moz-max-content;
+  width: max-content;
+}
+main .auction__section .wrapper .auction__nfts .auction__nft .nft-image {
+  width: 333px;
+}
+main .auction__section .wrapper .auction__nfts .auction__nft .nft__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -5px;
+  padding: 1.25rem;
+  background-color: #eeeeee;
+  border-radius: 0 0 1rem 1rem;
+}
+main .auction__section .wrapper .auction__nfts .auction__nft .nft__content .nft__content-left .nft__content-series {
+  color: #ff8039;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+main .auction__section .wrapper .auction__nfts .auction__nft .nft__content .nft__content-left .nft__content-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+}
+main .auction__section .wrapper .auction__nfts .auction__nft .nft__content .nft__content-left .nft__content-paragraph {
+  color: #777777;
+  font-size: 1.25rem;
+  margin: 10px 0 0 0;
+}
+main .auction__section .wrapper .auction__nfts .auction__nft .nft__content .nft__content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+main .auction__section .wrapper .auction__nfts .auction__nft .nft__content .nft__content-right .nft__content-paragraph-small {
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #777777;
+  margin-top: 0;
+}
+main .auction__section .wrapper .auction__nfts .auction__nft .nft__content .nft__content-right .nft__content-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .auction__section .wrapper .auction__nfts .auction__nft .nft__content .nft__content-right .nft__content-price .etherium-icon {
+  margin-right: 10px;
+}
+main .auction__section .wrapper .auction__nfts .auction__nft .nft__content .nft__content-right .nft__content-price .nft__content-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+}
+main .auction__section .wrapper .auction__nfts .auction__nft .nft__content .nft__content-right .nft__content-paragraph {
+  color: #777777;
+  font-size: 1.25rem;
+  margin: 10px 0 0 0;
+}
+@media screen and (min-width: 768px) {
+  main .auction__section .wrapper .auction__nfts .auction__nft .nft-image {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .auction__section .wrapper .auction__title {
+    margin-bottom: 1.5rem;
+  }
+  main .auction__section .wrapper .auction__paragraph {
+    display: inline;
+  }
+}
+main .sign-up__section {
+  display: flex;
+  align-items: center;
+  height: 540px;
+  padding: 3rem 0 4.5rem 0;
+  border-bottom: 2px solid #eeeeee;
+}
+main .sign-up__section .wrapper .sign-up__logo {
+  position: absolute;
+  top: 145rem;
+  right: -20px;
+  width: 220px;
+}
+main .sign-up__section .wrapper .sign-up__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .sign-up__section .wrapper .sign-up__container .sign-up__content .sign-up__title-small {
+  color: #ff3998;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+}
+main .sign-up__section .wrapper .sign-up__container .sign-up__content .sign-up__title {
+  width: 250px;
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0;
+}
+main .sign-up__section .wrapper .sign-up__container .sign-up__content .sign-up__paragraph {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  width: 230px;
+  padding-bottom: 1rem;
+  color: #777777;
+}
+main .sign-up__section .wrapper .sign-up__container .sign-up__content .sign-up__paragraph span {
+  display: none;
+}
+main .sign-up__section .wrapper .sign-up__container .sign-up__content .sign-up__button-border {
+  background: linear-gradient(90deg, rgb(255, 57, 152) 0%, rgb(255, 57, 57) 27%, rgb(255, 128, 57) 52%, rgb(255, 255, 0) 120%);
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  border-radius: 3rem;
+  padding: 5px;
+}
+main .sign-up__section .wrapper .sign-up__container .sign-up__content .sign-up__button-border .sign-up__button {
+  background: #FFFFFF;
+  border-radius: 3rem;
+  border: none;
+  padding: 1.25rem 3.25rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  main .sign-up__section {
+    height: 100%;
+  }
+  main .sign-up__section .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  main .sign-up__section .wrapper .sign-up__logo {
+    position: static;
+    width: 300px;
+    margin-bottom: -73px;
+    margin-right: 250px;
+  }
+  main .sign-up__section .wrapper .sign-up__container .sign-up__content .sign-up__title {
+    width: 100%;
+    font-size: 4.75rem;
+  }
+  main .sign-up__section .wrapper .sign-up__container .sign-up__content .sign-up__paragraph {
+    width: 570px;
+  }
+  main .sign-up__section .wrapper .sign-up__container .sign-up__content .sign-up__paragraph span {
+    display: inline;
+  }
+}
+
+footer {
+  padding: 4rem 0;
+}
+footer .wrapper .footer__container .footer__content .footer__paragraph {
+  font-size: 1.3rem;
+  color: #555555;
+}
+footer .wrapper .footer__container .footer__content .footer__socials {
+  font-size: 1.25rem;
+  color: #999999;
+  margin-top: 1rem;
+}
+footer .wrapper .footer__container .footer__content .footer__socials i {
+  margin-right: 10px;
+}
+footer .wrapper .footer__container .footer__links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3rem 0 5rem 0;
+}
+footer .wrapper .footer__container .footer__links .footer__links-item {
+  display: flex;
+  flex-direction: column;
+}
+footer .wrapper .footer__container .footer__links .footer__links-item a {
+  text-decoration: none;
+  color: #777777;
+  font-size: 1.35rem;
+  margin: 8px 0;
+}
+footer .wrapper .footer__container .footer__links .footer__links-item .footer__links-title {
+  text-transform: uppercase;
+  color: #555555;
+  letter-spacing: 0.1rem;
+}
+footer .wrapper .copyright__container .copyright {
+  font-size: 1.5rem;
+  color: #999999;
+}
+footer .wrapper .copyright__container .launch-date {
+  font-size: 1.5rem;
+  color: #999999;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  footer .wrapper .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .wrapper .footer__container .footer__links {
+    width: 40%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  footer .wrapper .copyright__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .wrapper .copyright__container .launch-date {
+    display: inline;
+  }
+}/*# sourceMappingURL=style.css.map */
